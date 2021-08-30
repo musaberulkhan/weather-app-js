@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;    
+}
+
+.tite{
+    font-size: 60px;
+}
+
+.sub-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.search-button{
+      
+}
+
