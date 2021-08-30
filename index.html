@@ -23,19 +23,34 @@
         <h1 class="text-white text-center mt-5 tite">Get Weather Info!</h1>
         <h4 class="text-white text-center mt-3 sub-title"> Search by City</h4>
 
-        <input class="form-control w-50 mx-auto mt-5 py-2" list="datalistOptions" id="search-input" placeholder="Type city to search...">
+        <!-- Search Input  -->
+        <input class="form-control w-50 mx-auto mt-5 py-2" list="datalistOptions" id="search-input"
+            placeholder="Type city to search...">
         <datalist id="datalistOptions">
 
-            <!-- <option value="San Francisco">
-        <option value="New York">
-        <option value="Seattle">
-        <option value="Los Angeles">
-        <option value="Chicago"> -->
+                <!-- <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago"> -->
         </datalist>
+
+        <!-- Search Button  -->
         <div class="d-flex justify-content-center">
-            <Button class="btn btn-warning mt-4 px-4 py-2">Search</Button>
+            <Button onclick="loadCityWeather()" class="btn btn-warning mt-4 px-4 py-2">Search</Button>
+        </div>
+
+
+        <!-- Display Result  -->
+        <div id="display-result">
+            
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
