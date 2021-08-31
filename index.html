@@ -28,7 +28,7 @@
             placeholder="Type city to search...">
         <datalist id="datalistOptions">
 
-                <!-- <option value="San Francisco">
+            <!-- <option value="San Francisco">
             <option value="New York">
             <option value="Seattle">
             <option value="Los Angeles">
@@ -40,10 +40,16 @@
             <Button onclick="loadCityWeather()" class="btn btn-warning mt-4 px-4 py-2">Search</Button>
         </div>
 
+        <div class="d-flex justify-content-center mt-4">
+            <div id="spinner" class="spinner-border text-white text-warning d-none" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        
 
         <!-- Display Result  -->
         <div id="display-result">
-            
+
         </div>
     </div>
 

@@ -1,6 +1,9 @@
 //****************************************************************************
 //            Async Function For Loading City Weather Data
 async function loadCityWeather() {
+    //Display Spinner
+    const spinner = document.getElementById('spinner');
+    spinner.classList.remove('d-none');
     const searchCityInput = document.getElementById('search-input');
     const searchCity = searchCityInput.value;
     const APIKey = '68f746d17402acc8319d1171bb4ccf28';
@@ -14,6 +17,7 @@ async function loadCityWeather() {
     catch (error) {
         console.log(error);
     }
+    spinner.classList.add('d-none');
 }
 
 
