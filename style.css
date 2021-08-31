@@ -48,3 +48,21 @@ body{
     width: 100px;
     height: 100px;
 }
+
+
+
+
+/* **********     Smart Phone   ***********/
+@media only screen and (max-width: 680px){   
+    .tite{
+        font-size: 35px;
+    }
+    
+    .sub-title{
+        font-size: 22px;        
+    }
+
+    #search-input{
+        width: 70%!important;
+    }
+}
